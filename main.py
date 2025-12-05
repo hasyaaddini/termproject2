@@ -1,10 +1,12 @@
-class Cat:
-    def meow(self):
-        print("I love chicken")
+training_input = []
+training_mood = []
 
-def main():
-    c = Cat()
-    c.meow()
+with open("training_data.txt", "r", encoding="utf-8") as f:
+    for line in f:
+        line = line.strip()
 
-if __name__ == "__main__":
-    main()
+        if line.startswith('#'):
+            continue
+        input, mood = line.split(",")
+        training_input.append(input)
+        training_mood.append(mood)

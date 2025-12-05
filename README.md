@@ -1,3 +1,5 @@
+Project's Description:
+
 Progress Log:
 
 [2025-11-27] - Clarification from Instructor
